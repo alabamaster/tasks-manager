@@ -40,8 +40,8 @@ export default createStore({
 			this.commit('updateLocalStore')
 		},
 		updateLocalStore(state) {
-			localStorage.setItem('tasks1337', JSON.stringify(state.tasks))
-			localStorage.setItem('tasksAllTags1337', JSON.stringify(state.allTags))
+			localStorage.setItem('localTasks', JSON.stringify(state.tasks))
+			localStorage.setItem('localTasksTags', JSON.stringify(state.allTags))
 		}
 	},
 	getters: {
